@@ -1,0 +1,523 @@
+
+			body {
+				font-size: 1em;
+				line-height:1.5;
+				padding:0;
+				margin:0;
+				background-color:white;
+				transition:0.3s all;
+				color:white;
+    			-ms-text-size-adjust: 100%;
+    			-webkit-text-size-adjust: 100%;
+				font-family: 'Open Sans', sans-serif;				
+			}
+
+			h2 {
+				color:#BB86FC;
+				padding-top:1%;
+				text-align:center;
+			}
+
+			.containter {
+				width:80%;
+				margin:auto;
+				overflow:hidden;
+			}
+
+			.wrapper {
+				display:grid;
+				grid-template-columns:1fr 1fr 1fr;
+				padding:10px;
+				padding-top:50px;
+				padding-bottom:50px;
+				text-align:center;
+				grid-gap:1em;
+				grid-auto-rows:300px;
+
+			}
+
+			.wrapper > div{
+				padding:1em;
+				background-color: #212121;
+				border-radius:10px;
+			}
+
+			#backgroundtext {
+				font-style: black;
+				display: table;
+  				position: absolute;
+				top: -20%;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+			}
+
+			#verticalname {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			#backgroundtext p {
+				font-family:url('https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat');
+				font-size:12em;
+				-webkit-text-stroke-width: 1px;
+   				-webkit-text-stroke-color: black;
+   				text-align:center;
+   				font-weight:bolder;
+
+			}
+
+			ul{
+				margin:0;
+				padding:0;
+			}
+
+			header {
+				height:100vh;
+				color:white;
+			}
+
+			#navbar {
+				position:fixed;
+				width:100%;
+			}
+
+			header a{
+				text-decoration:none;
+				text-transform:uppercase;
+				font-size:1em;
+				color:white;
+			}
+
+			#resumeButton{
+				transition:all 0.3s;
+			}
+
+			.resumeButtonorig{
+				color:black;
+			}
+
+			.resumeButtonchange{
+				color:white;
+			}
+
+			#emailbutton:hover{
+				cursor:pointer;
+			}
+
+			#resumeButton span, 
+			#emailbutton span{
+				display:inline-block;
+				position:relative;
+				transition:0.5s;
+			}
+
+			#resumeButton span:after, 
+			#emailbutton span:after{
+				content: "\00bb";
+				position: absolute;
+				opacity:0;
+				top: 0;
+				right:-20px;
+				transition:0.5s;
+				color:#BB86FC;
+			}
+
+			#resumeButton:hover span, 
+			#emailbutton:hover span {
+				padding-right: 25px;
+				color:#BB86FC;
+			}
+
+			#resumeButton:hover span:after,
+			#emailbutton:hover span:after {
+				opacity:1;
+				right:0;
+			}
+
+			header li{
+				float:left;
+				display: inline;
+				padding: 0 20px 0 20px;
+
+			}
+
+			header #logo{
+
+				float:left;
+				margin-top:1%;
+				margin-left:1%;
+
+			}
+
+			header #logo h1{
+				margin:0;
+				font-family: sans-serif;
+				transition:all 0.3s;
+			}
+
+			.blacklogooutline {
+				-webkit-text-stroke-width: .7px;
+   				-webkit-text-stroke-color: black;
+   				color:white;
+			}
+
+			.whitelogooutline {
+				-webkit-text-stroke-width: .7px;
+   				-webkit-text-stroke-color: white;
+   				color:black;
+			}
+
+			header nav{
+				float:right;
+				margin-top:1%;
+			}
+
+			.scrollDownAnim {
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				height:50px;
+			}
+
+			.scrollDownAnim:before {
+				content'';
+				position:absolute;
+				left: -10px;
+				bottom:0;
+				width:10px;
+				height:10px;
+				border-left: 2px solid #fff;
+				border-bottom: 2px solid #fff;
+				transform:rotate(-45deg);
+			}
+
+			.scrollDownAnim:after{
+				content:'';
+				position: absolute;
+				top:0;
+				width:20px;
+				right: 50px;
+				background:#fff;
+				animation:animate 2s linear infinite;
+			}
+
+			@keyframes animate {
+				0% {
+					transform-origin:top;
+					transform:scaleY(0);
+				}
+				45% {
+					transform-origin:top;
+					transform:scaleY(1);
+				}
+				55% {
+					transform-origin:bottom;
+					transform:scaleY(1);
+				}
+				100% {
+					transform-origin:bottom;
+					transform:scaleY(0);
+				}
+			}
+
+			/*************************about*****************************************************************/
+
+			#about {
+				
+			}
+
+			#about p{
+				text-align:left;
+				padding: 5%;
+				padding-top:1%;
+			}
+
+			#about ul{
+				text-align:left;
+				padding-left: 20%;
+				padding-top:1%;
+				padding-bottom:5%;
+			}
+
+			#about a{
+				text-decoration: none;
+				color:white;
+			}
+
+			#aboutwrap {
+				grid-auto-rows:400px;
+				padding:10px;
+				padding-top:100px;
+				padding-bottom:100px;
+				flex-flow:row wrap;
+
+			}
+
+			#aboutwrap div{
+				background-color:#121212;
+			}
+
+			#headShot {
+				margin-top:50px;
+				max-width:40vh;
+				border:3px solid #BB86FC;
+			}
+
+
+			/*************************skills***********************************************************************/
+			#skills {
+				padding-top:20px;
+				padding-bottom:150px;
+				background-color:#121212;
+			}	
+
+			#skills a {
+				text-decoration:none;
+				color:white;
+				font-size:1em;
+				
+			}
+
+			#skillswrap {
+				display:grid;
+				grid-template-columns:1fr 1fr 1fr;
+				padding:10px;
+				padding-top:50px;
+				padding-bottom:50px;
+				text-align:center;
+				grid-gap:1em;
+				grid-template-rows:50px, 300px, 300px, 300px;
+			}
+
+			#skillswrap div{
+				padding:1em;
+				background-color: #121212;
+				border-radius:10px;
+			}
+
+			#skillswrap div:hover{
+				padding:1em;
+				background-color: #212121;
+				border-radius:10px;
+				cursor:pointer;
+			}
+
+			#boxesHead {
+				grid-column:1/4;
+			}
+
+			#boxesHead h2{
+				padding-bottom:10px;
+				border-bottom: 2px solid white;
+			}
+
+			#modal {
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				height: 100%; /* Full height */
+				overflow: auto; /* Enable scroll if needed */
+				background-color: rgb(0,0,0); /* Fallback color */
+				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Content/Box */
+			.modal-content {
+				background-color: #121212;
+				margin: 10% auto; /* 15% from the top and centered */
+				padding: 20px;
+				width: 80%; /* Could be more or less, depending on screen size */
+				border-radius:10px;
+			}
+
+			/* The Close Button */
+			.close {
+				color: #aaa;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+				padding-right:2%;
+			}
+
+			.close:hover,
+			.close:focus {
+				color: #BB86FC;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			/*************************contact*****************************************************************/
+			#contact{
+				background:#121212;
+				height:100vh;
+			}
+
+			#contactcontain {
+				height:100%;
+			}
+
+			#buttondiv {
+				padding:30px;
+				float:center;
+						
+			}
+
+			#emailbutton{
+				position:absolute;
+				height:38px;
+				width:100px;
+				background-color:#212121;
+				border:0px;
+				color:white;
+				transition:all 0.5s;
+				border-radius:2px;
+				left:45%;
+			}
+
+			.form {
+				width:50%;
+				position:relative;
+				height:75px;
+				overflow:hidden;
+				left:50%;
+				margin-left:-25%;
+			}
+
+			.form input{
+				width:100%;
+				height:100%;
+				color:white;
+				padding-top:20px;
+				border:none;
+				outline:none;
+				background-color:#121212;
+
+			}
+
+			.form label{
+				position:absolute;
+				bottom:0px;
+				left: 0%;
+				height:100%;
+				width:100%;
+				pointer-events:none;
+				border-bottom:1px solid black;
+
+			}
+
+			.form label::after {
+				content: "";
+				position: absolute;
+				left:0px;
+				bottom:-1px;
+				height:100%;
+				width:100%;
+				border-bottom:3px solid #BB86FC;
+				transform:translateX(-100%);
+				transition: all 0.3s ease;
+			}
+
+			.content-name,
+			.content-email,
+			.content-message{
+				position: absolute;
+				bottom: 5px;
+				left: 0px;
+				transition: all 0.3s ease;
+
+			}
+
+			.form input:focus + .label-name .content-name, 
+			.form input:valid + .label-name .content-name,
+			.form input:focus + .label-email .content-email, 
+			.form input:valid + .label-email .content-email,
+			.form input:focus + .label-message .content-message, 
+			.form input:valid + .label-message .content-message{
+				transform: translateY(-150%);
+				font-size:1em;
+				color:#BB86FC;
+			}
+
+			.form input:focus .label-name::after, 
+			.form input:valid + .label-name::after,
+			.form input:focus .label-email::after, 
+			.form input:valid + .label-email::after,
+			.form input:focus .label-message::after, 
+			.form input:valid + .label-message::after{
+				transform: translateX(0%);
+			}
+
+			/*************************resume*****************************************************************/
+
+			#resume{
+				background-color:#121212;
+			}
+
+			#resume h2{
+				padding-bottom:2%;
+				text-align:center;
+				color:#BB86FC;
+			}
+
+			#pdf{
+				padding-bottom:5%;
+				height:calc(90vh - 10px);
+
+				margin-top:0px;
+			}
+
+
+
+			/*************************footer*****************************************************************/
+
+			footer{
+				padding:20px;
+				margin-top:20px;
+				background-color:#212121;
+				text-align:center;
+			}
+
+			footer a{
+				color:lightgrey;
+				font-weight:bold;
+				text-decoration: none;
+				float:left;
+				display: inline;
+				padding: 0 20px 0 20px;
+			}
+
+			footer li{
+				list-style-type:none;
+			}
+
+			#socialWrap {
+				display:grid;
+				grid-template-columns:1fr 1fr;
+				padding:10px;
+				text-align:center;
+				grid-gap:1em;
+			}
+
+			#socialWrap img {
+				width:50px; 
+				height:50px;
+			}
+
+			#linkedinlink{
+				float:left;
+			}
+
+			#twitterlink{
+				float:right;
+			}
+
+			#underFooter {
+				background:#212121;
+
+			}
