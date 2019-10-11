@@ -2,22 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, intial-scale=1">
 		<meta name="description" content="Alex Hanna wbesite">
 		<meta name="author" content="Alex Hanna">
 		<title>Alex Hanna</title>
 		<link rel="stylesheet" type="text/css" href="alexStyleLanding.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:black&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="alexLanding.js"></script>
 	</head>
 
 	<body>
 
 		<header>
-			<div class="container" id="navbar">
+			<div id="navbar">
 				<div id="logo">
 					<a href="index.html">
 						<h1 id="logotext">
-							ALEX HANNA
+							AH
 						</h1>
 					</a>
 				</div>
@@ -32,16 +36,13 @@
 					<p>ALEX<br>HANNA</p>
 				</div>
 			</div>
-			<div class="scrollDownAnim">
-
-			</div>
 		</header>
 
 
 		<section id="about">
-			<div class="containter">
-				<div class="wrapper" id="aboutwrap">
-					<div>
+			<div class="container">
+				<div class="row d-flex justify-content-center" class="d-flex align-items-center">
+					<div class="col-md-4" style="padding-top:5vh;">
 						<h2>
 							About me
 						</h2>
@@ -49,32 +50,19 @@
 							My name is Alex Hanna and I am currently a Senior at Greenwich High School in Greenwich, Connecticut.  I believe I am successful in school because of my driven and tenacious work ethic, and I would like to bring my talents to a university and job opportunities.  I am a quick learner and I am always open to learning new skills.
 						</p>
 					</div>
-					<div>
-						<img name="slide" id="headShot" src="img/headShot2.jpg" style="width:10vw;">
-						<script>
-							var step=1
-							function slideshow() {
-								var images = ["image1.src", "image2.src", "image3.src"];
-								var i = 1;
-
-								function switchslides(){
-									document.images.slide.src=images[i];
-									i++;
-								}
-								setTimeout("switchslides()",1000);
-							}
-						</script>
+					<div class="col-md-4">
+						<img name="slide" id="headShot" src="img/headShot2.jpg" >
 					</div>
-					<div>
+					<div class="col-md-4" style="padding-top:5vh;">
 						<h2>
 							Quick facts
 						</h2>
 						<ul>
-							<a href="https://www.greenwichschools.org/greenwich-high-school"><li>Greenwich HS 2020</li></a>
+							<a href="https://www.greenwichschools.org/greenwich-high-school"><li>Greenwich High School 2020</li></a>
 							<a href="https://www.scouting.org/resources/guide-to-advancement/eagle-scout-rank/"><li>Eagle Scout</li></a>
 							<a href="https://www.ghswaterpolo.org"><li>Varsity Water Polo</li></a>
 							<a href="http://www.greenwichcardinalsathletics.assn.la/Bulletins.asp?MyTeam=853736&org=GREENWICHCARDINALSATHLETICS"><li>Varsity Swimming</li></a>
-							<a href="https://www.greenwichschools.org/greenwich-high-school/student-life/student-government"><li>GHS Senior Class Vice President</li></a>
+							<a href="https://www.greenwichschools.org/greenwich-high-school/student-life/student-government"><li>Senior Class Vice President</li></a>
 							<a href="https://greenwich.myclubsource.com/clubs/programmingclub"><li>Programming Club President</li></a>
 						</ul>
 					</div>
@@ -84,15 +72,16 @@
 
 
 		<section id="skills">
-				<div id="modal">
-  					<div class="modal-content" id="javaContent">
+				<div id="modall">
+  					<div class="modallcontent" id="javaContent">
 						<span class="close">&times;</span>
+						<h2>Java</h2>
 						<h3>Coursework:<h3>
 							<li><a href="https://apcentral.collegeboard.org/courses/ap-computer-science-a">AP Computer Science A</a></li>
 						<h3><br>Experience</h3>
 							<li> 2 years </li>
 					</div>
-					<div class="modal-content" id="javascriptContent">
+					<div class="modallcontent" id="javascriptContent">
 						<span class="close">&times;</span>
 						<h2>Javascript</h2>
 						<h3>Coursework:<h3>
@@ -100,17 +89,18 @@
 						<h3><br>Experience</h3>
 							<li> 4 years </li>
 						<h3><br>Projects:</h3>
-							<li><a>Alex Hanna Website</a></li>
+							<li><a href="index.html">Alex Hanna Website</a></li>
 							<li><a>TMA Construction</a></li>
 							<li><a>GPA Calculator</a></li>
 						<h3><br>Related Knowledge:</h3>
 							<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-							<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">HTML</a></li>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+							<li><a href="https://getbootstrap.com">Bootstrap</a></li>
 							<li><a href="https://jquery.com">JQuery (limited)</a></li>
 							<li><a href="https://sass-lang.com">Sass (limited)</a></li>
 							<li><a href="http://jade-lang.com">Jade (limited)</a></li>
 					</div>
-					<div class="modal-content" id="finalcutContent">
+					<div class="modallcontent" id="finalcutContent">
 						<span class="close">&times;</span>
 						<h2>Final Cut Pro X</h2>
 						<h3>Experience</h3>
@@ -122,16 +112,16 @@
 							<li><a href="https://www.apple.com/imovie/">iMovie</a></li>
 							<li><a href="https://www.adobe.com/products/premiere.html">Premiere Pro CC (limited)</a></li>
 					</div>
-					<div class="modal-content" id="photoshopContent">
+					<div class="modallcontent" id="photoshopContent">
 						<span class="close">&times;</span>
 						<h2>Adobe Photoshop CC</h2>
 						<h3>Experience</h3>
 							<li> 5 years </li>
 						<h3><br>Portfolio:</h3>
 							<img src="portfolio/photoshop/schong.png" style="width:100px; height:150px;">
-							<img src="portfolio/photoshop/bogusbasin.png" style="width:100px; height:100px;">
+							<img src="photoshop/bogusbasin.png" style="width:100px; height:100px;">
 					</div>
-					<div class="modal-content" id="photographyContent">
+					<div class="modallcontent" id="photographyContent">
 						<span class="close">&times;</span>
 						<h2>Aerial Photography</h2>
 						<h3>Experience</h3>
@@ -148,29 +138,29 @@
 					</div>
 
 				</div>
-			<div class="containter">
-				<div id="skillswrap">
-					<div id="boxesHead">
+
+			<div class="container" >
+				<div class="row" id="skillswrap">
+					<div class="col-md-12">
 						<h2>Skills</h2>
 					</div>
-
-					<div class="skillbox" onclick="openTab('javaExpand');" id="javabox">
+					<div class="col-md-4 skillbox" onclick="openTab('javaExpand');" id="javabox">
 						<img src="img/javalogo.png" style="width:100px; height:100px;">
 						<h3>Java</h3>
 					</div>
-					<div class="skillbox" onclick="openTab('javascriptExpand');" id="javascriptbox">
+					<div class="col-md-4 skillbox" onclick="openTab('javascriptExpand');" id="javascriptbox">
 						<img src="img/javascriptlogo.png" style="width:100px; height:100px;">
 						<h3>Javascript/HTML/CSS</h3>
 					</div>
-					<div class="skillbox" onclick="openTab('finalcutExpand');">
+					<div class="col-md-4 skillbox" onclick="openTab('finalcutExpand');">
 						<img src="img/finalcutlogo.png" style="width:100px; height:100px;">
 						<h3>Final Cut Pro X</h3>
 					</div>
-					<div class="skillbox" onclick="openTab('photoshopExpand');">
+					<div class="col-md-4 skillbox" onclick="openTab('photoshopExpand');">
 						<img src="img/photoshoplogo.png" style="width:100px; height:100px;">
 						<h3>Adobe Photoshop CC</h3>
 					</div>
-					<div class="skillbox" onclick="openTab('photographyExpand');">
+					<div class="col-md-4 skillbox" onclick="openTab('photographyExpand');">
 						<img src="img/drone.png" style="width:190px; height:100px;">
 						<h3>Aerial Photography</h3>
 
@@ -182,14 +172,14 @@
 
 
 		<section id="contact">
-			<div class="container" id="contactcontain" >
-				<div>
-					<h2 id="getInTouch">
+			<div class="container" >
+				<div class="row">
+					<h2 class="col-md-12" id="getInTouch">
 						Get in touch
 					</h2>
 
 				</div>
-				<div id="namediv">
+				<div class="row" id="namediv">
 					<div class="form">
 						<input type="text" class="messageForm" id="nameInput" required />
 						<label for="name" class="label-name">
@@ -197,7 +187,7 @@
 						</label>
 					</div>
 				</div>
-				<div id="emaildiv">
+				<div class="row" id="emaildiv">
 					<div class="form">
 						<input type="text" class="messageForm" id="emailInput" required />
 						<label for="email" class="label-email">
@@ -205,7 +195,7 @@
 						</label>
 					</div>
 				</div>
-				<div id="messagediv">
+				<div class="row" id="messagediv">
 					<div class="form">
 						<input type="text" class="messageForm" id="messageArea" required />
 						<label for="email" class="label-message">
@@ -213,7 +203,7 @@
 						</label>
 					</div>
 				</div>
-				<div id="buttondiv">
+				<div class="row" id="buttondiv">
 					<button type="submit" id="emailbutton" onclick="emailSubmit()"><span>Send</span></button>
 				</div>
 			</div>
@@ -226,7 +216,7 @@
 					R&eacute;sum&eacute;
 				</h2>
 				<div id="pdf">
-					<a href="alexResume.html"><embed class="pdfobject" src="ALEXHANNAcol.pdf" type="application/pdf" style="margin-left:30vw; overflow: auto; width: 40vw; height:100%;"></a>
+					<a href="alexResume.html"><embed class="pdfobject" src="ALEXHANNAcol.pdf" type="application/pdf" style="overflow: auto; width:40vw; height:60vh;"></a>
 				</div>
 			</div>
 		</section>
@@ -241,13 +231,10 @@
 					<li><a target="_blank" href="https://www.linkedin.com/in/alex-hanna" class="socialLink" id="linkedinlink"><img src="img/linkedinlogo.png"></a></li>
 				</div>
 			</div>
-			<div id="underFooter">
+			<div id="underFooter" style="color:white;">
 				<p>Alex Hanna, Copyright &copy; 2019 </p>
 			</div>
 		</footer>
 
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="alexLanding.js"></script>
 	</body>
 </html>
