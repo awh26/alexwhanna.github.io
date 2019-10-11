@@ -18,35 +18,18 @@
 				text-align:center;
 			}
 
-			.containter {
+			.container {
 				width:80%;
 				margin:auto;
 				overflow:hidden;
-			}
-
-			.wrapper {
-				display:grid;
-				grid-template-columns:1fr 1fr 1fr;
-				padding:10px;
-				padding-top:50px;
-				padding-bottom:50px;
 				text-align:center;
-				grid-gap:1em;
-				grid-auto-rows:300px;
-
-			}
-
-			.wrapper > div{
-				padding:1em;
-				background-color: #212121;
-				border-radius:10px;
 			}
 
 			#backgroundtext {
 				font-style: black;
 				display: table;
   				position: absolute;
-				top: -20%;
+				top: 0;
 				left: 0;
 				height: 100%;
 				width: 100%;
@@ -58,9 +41,15 @@
 				vertical-align: middle;
 			}
 
+			#row {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+
 			#backgroundtext p {
 				font-family:url('https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat');
-				font-size:12em;
+				font-size:5em;
 				-webkit-text-stroke-width: 1px;
    				-webkit-text-stroke-color: black;
    				text-align:center;
@@ -92,6 +81,7 @@
 
 			#resumeButton{
 				transition:all 0.3s;
+				float:right;
 			}
 
 			.resumeButtonorig{
@@ -143,18 +133,22 @@
 
 			}
 
-			header #logo{
-
+			#logo{
 				float:left;
 				margin-top:1%;
 				margin-left:1%;
 
 			}
 
-			header #logo h1{
+			#logo h1{
 				margin:0;
 				font-family: sans-serif;
 				transition:all 0.3s;
+			}
+
+			header nav{
+				float:right;
+				margin-top:1%;
 			}
 
 			.blacklogooutline {
@@ -169,64 +163,10 @@
    				color:black;
 			}
 
-			header nav{
-				float:right;
-				margin-top:1%;
-			}
-
-			.scrollDownAnim {
-				position:absolute;
-				top:50%;
-				left:50%;
-				transform: translate(-50%,-50%);
-				height:50px;
-			}
-
-			.scrollDownAnim:before {
-				content'';
-				position:absolute;
-				left: -10px;
-				bottom:0;
-				width:10px;
-				height:10px;
-				border-left: 2px solid #fff;
-				border-bottom: 2px solid #fff;
-				transform:rotate(-45deg);
-			}
-
-			.scrollDownAnim:after{
-				content:'';
-				position: absolute;
-				top:0;
-				width:20px;
-				right: 50px;
-				background:#fff;
-				animation:animate 2s linear infinite;
-			}
-
-			@keyframes animate {
-				0% {
-					transform-origin:top;
-					transform:scaleY(0);
-				}
-				45% {
-					transform-origin:top;
-					transform:scaleY(1);
-				}
-				55% {
-					transform-origin:bottom;
-					transform:scaleY(1);
-				}
-				100% {
-					transform-origin:bottom;
-					transform:scaleY(0);
-				}
-			}
-
 			/*************************about*****************************************************************/
 
 			#about {
-				
+				color:white;
 			}
 
 			#about p{
@@ -247,74 +187,58 @@
 				color:white;
 			}
 
-			#aboutwrap {
-				grid-auto-rows:400px;
-				padding:10px;
-				padding-top:100px;
-				padding-bottom:100px;
-				flex-flow:row wrap;
-
-			}
-
-			#aboutwrap div{
-				background-color:#121212;
-			}
-
 			#headShot {
 				margin-top:50px;
-				max-width:40vh;
+				max-width:30vh;
 				border:3px solid #BB86FC;
 			}
 
 
 			/*************************skills***********************************************************************/
+			
 			#skills {
-				padding-top:20px;
-				padding-bottom:150px;
-				background-color:#121212;
+				padding-top:20vh;
+				padding-bottom:20vh;
 			}	
 
 			#skills a {
 				text-decoration:none;
 				color:white;
 				font-size:1em;
-				
 			}
 
 			#skillswrap {
-				display:grid;
-				grid-template-columns:1fr 1fr 1fr;
 				padding:10px;
 				padding-top:50px;
 				padding-bottom:50px;
 				text-align:center;
-				grid-gap:1em;
-				grid-template-rows:50px, 300px, 300px, 300px;
+				color:white;
 			}
 
 			#skillswrap div{
-				padding:1em;
-				background-color: #121212;
+				padding:2em;
 				border-radius:10px;
 			}
 
-			#skillswrap div:hover{
-				padding:1em;
+			.modallcontent h3{
+				color:white;
+			}
+			.modallcontent li{
+				font-size:1em;
+			}
+
+
+			#skillswrap img{
+				margin:1em;
+				
+			}
+
+			.skillbox:hover{
 				background-color: #212121;
-				border-radius:10px;
 				cursor:pointer;
 			}
 
-			#boxesHead {
-				grid-column:1/4;
-			}
-
-			#boxesHead h2{
-				padding-bottom:10px;
-				border-bottom: 2px solid white;
-			}
-
-			#modal {
+			#modall {
 				display: none; /* Hidden by default */
 				position: fixed; /* Stay in place */
 				z-index: 1; /* Sit on top */
@@ -325,20 +249,26 @@
 				overflow: auto; /* Enable scroll if needed */
 				background-color: rgb(0,0,0); /* Fallback color */
 				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+				background-color: #121212;
 			}
 
-			/* Modal Content/Box */
-			.modal-content {
-				background-color: #121212;
+			/* Modall Content/Box */
+			.modallcontent {
+				background-color: #212121;
 				margin: 10% auto; /* 15% from the top and centered */
 				padding: 20px;
 				width: 80%; /* Could be more or less, depending on screen size */
 				border-radius:10px;
 			}
 
+			.modallcontent li {
+				color:white;
+				font-size:1em;
+			}
+
 			/* The Close Button */
 			.close {
-				color: #aaa;
+				color: white;
 				float: right;
 				font-size: 28px;
 				font-weight: bold;
@@ -355,7 +285,7 @@
 			/*************************contact*****************************************************************/
 			#contact{
 				background:#121212;
-				height:100vh;
+				padding-bottom:18vh;
 			}
 
 			#contactcontain {
@@ -377,7 +307,7 @@
 				color:white;
 				transition:all 0.5s;
 				border-radius:2px;
-				left:45%;
+				left:50vh-(50px);
 			}
 
 			.form {
@@ -387,6 +317,7 @@
 				overflow:hidden;
 				left:50%;
 				margin-left:-25%;
+				color:white;
 			}
 
 			.form input{
@@ -457,6 +388,7 @@
 
 			#resume{
 				background-color:#121212;
+				padding-top:18vh;
 			}
 
 			#resume h2{
@@ -467,9 +399,6 @@
 
 			#pdf{
 				padding-bottom:5%;
-				height:calc(90vh - 10px);
-
-				margin-top:0px;
 			}
 
 
@@ -507,6 +436,7 @@
 			#socialWrap img {
 				width:50px; 
 				height:50px;
+				margin-bottom:1em;
 			}
 
 			#linkedinlink{
