@@ -1,4 +1,4 @@
-			// Email Button ---------------------------------------------------------------------------------------------------------------------
+// Email Button ---------------------------------------------------------------------------------------------------------------------
 
 			function emailSubmit() {
 				document.getElementById("getInTouch").innerHTML == "Name";
@@ -7,24 +7,26 @@
 
 			// Skills modals ---------------------------------------------------------------------------------------------------------------------
 			// Get the modal
-			var modal = document.getElementById("modal");
-			var javaboxcontent = document.getElementById("javaContent");
-			var javascriptboxcontent = document.getElementById("javascriptContent");
-			var finalcutboxcontent = document.getElementById("finalcutContent");
-			var photoshopboxcontent = document.getElementById("photoshopContent");
-			var photographyboxcontent = document.getElementById("photographyContent");
+			
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close");
 
 			// When the user clicks on the button, open the modal 
 			function openTab(innertext) {
-				javaboxcontent.style.display = "none";
+				var modall = document.getElementById("modall");
+				var javaboxcontent = document.getElementById("javaContent");
+				var javascriptboxcontent = document.getElementById("javascriptContent");
+				var finalcutboxcontent = document.getElementById("finalcutContent");
+				var photoshopboxcontent = document.getElementById("photoshopContent");
+				var photographyboxcontent = document.getElementById("photographyContent");
+
+				document.getElementById("javaContent").style.display = "none";
 				javascriptboxcontent.style.display = "none";
 				finalcutboxcontent.style.display = "none";
 				photoshopboxcontent.style.display = "none";
 				photographyboxcontent.style.display = "none";
-				modal.style.display = "block";
+				modall.style.display = "block";
 
 				var closeBtn;
 
@@ -46,7 +48,7 @@
 				}
 
 				closeBtn.onclick = function() {
-					modal.style.display = "none";
+					modall.style.display = "none";
 					javaboxcontent.style.display = "none";
 					javascriptboxcontent.style.display = "none";
 					finalcutboxcontent.style.display = "none";
@@ -57,8 +59,8 @@
 
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
-				if (event.target == modal) {
-			   		modal.style.display = "none";
+				if (event.target == modall) {
+			   		modall.style.display = "none";
 			   		javaboxcontent.style.display = "none";
 					javascriptboxcontent.style.display = "none";
 					finalcutboxcontent.style.display = "none";
@@ -68,21 +70,10 @@
 			}
 
 
-
 			// Header onscroll ---------------------------------------------------------------------------------------------------------------------
 			window.onscroll = function() {
 				inverter();
-				navCollapse();
 			};
-
-			function navCollapse() {
-				if (document.body.scrollTop > screen.height-200 || document.documentElement.scrollTop > screen.height-200) {
-					document.getElementById("logotext").innerHTML = "AH";
-
-				} else {
-  					document.getElementById("logotext").innerHTML = "ALEX HANNA";
-				}
-			}
 
 			function inverter() {
 				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -92,24 +83,12 @@
 					$("#resumeButton").addClass("resumeButtonchange");
 					$("#resumeButton").removeClass("resumeButtonorig");
 
+
 				} else {
 					document.body.style.backgroundColor = "white";
 					$("#logotext").addClass("blacklogooutline");
 					$("#logotext").removeClass("whitelogooutline");
   					$("#resumeButton").addClass("resumeButtonorig");
 					$("#resumeButton").removeClass("resumeButtonchange");
-				}
+				}	
 			}
-
-
-
-			// Image Slideshow ---------------------------------------------------------------------------------------------------------------------
-			var image1=new Image()
-			image1.src="file:///Users/alexhanna/Documents/Code/alexwhanna/img/headShot.jpg";
-
-			var image2=new Image()
-			image2.src="file:///Users/alexhanna/Documents/Code/alexwhanna/img/poloshot.jpg";
-
-			var image3=new Image()
-			image3.src="file:///Users/alexhanna/Documents/Code/alexwhanna/img/prompicture.jpeg";
-
