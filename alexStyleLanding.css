@@ -46,7 +46,6 @@
 				vertical-align: middle;
 			}
 
-
 			#backgroundtext p {
 				font-family:url('https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat');
 				font-size:5em;
@@ -153,15 +152,28 @@
 
 			.blacklogooutline {
 				-webkit-text-stroke-width: .7px;
-   				-webkit-text-stroke-color: black;
+   				-webkit-text-stroke-color: #121212;
    				color:white;
 			}
 
 			.whitelogooutline {
 				-webkit-text-stroke-width: .7px;
    				-webkit-text-stroke-color: white;
-   				color:black;
+   				color:#121212;
 			}
+
+			#scroll {
+				z-index:1;
+				position:absolute;
+				color:#121212;
+				margin-top:90vh;
+				width:100%;
+			}
+
+			#scroll p {
+				text-align:center;
+			}
+
 
 			/*************************about*****************************************************************/
 
@@ -293,21 +305,21 @@
 			}
 
 			#buttondiv {
-				padding:30px;
-				float:center;
-						
+				padding-top:30px;
+				width:100%;
+				align-items:center;
 			}
 
 			#emailbutton{
 				position:absolute;
 				height:38px;
 				width:100px;
+				margin-left:-50px;
 				background-color:#212121;
 				border:0px;
 				color:white;
 				transition:all 0.5s;
 				border-radius:2px;
-				left:50vh-(50px);
 			}
 
 			.form {
