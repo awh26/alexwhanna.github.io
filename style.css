@@ -1,22 +1,22 @@
-
 			body {
-				font-size: 1em;
-				line-height:1.5;
-				padding:0;
-				margin:0;
 				background-color:white;
-				transition:0.3s all;
+				transition:0.3s all; /* Creates a smooth transition when inverting the background and text color*/
 				color:white;
-    			-ms-text-size-adjust: 100%;
-    			-webkit-text-size-adjust: 100%;
 				font-family: 'Open Sans', sans-serif;				
+			}
+
+			/* When hovering on any link, the text will turn grey and the cursor will become a pointer */
+			a {
+				color:white;
+				text-decoration: none;
 			}
 
 			a:hover {
 				cursor:pointer;
-				color:grey;
+				color:lightgrey;
 			}
 
+			/* Establishes all h2's as being purple and centered with some padding only on the top */
 			h2 {
 				color:#BB86FC;
 				padding-top:1%;
@@ -30,6 +30,7 @@
 				text-align:center;
 			}
 
+			/* The text "Alex Hanna" on the landing screen */
 			#backgroundtext {
 				font-style: black;
 				display: table;
@@ -41,12 +42,8 @@
 				z-index: -1;
 			}
 
+			/* div which the "Alex Hanna" text is in, styled so it is centered vertically */
 			#verticalname {
-				display: table-cell;
-				vertical-align: middle;
-			}
-
-			#row {
 				display: table-cell;
 				vertical-align: middle;
 			}
@@ -61,11 +58,6 @@
 
 			}
 
-			ul{
-				margin:0;
-				padding:0;
-			}
-
 			header {
 				height:100vh;
 				color:white;
@@ -77,10 +69,7 @@
 			}
 
 			header a{
-				text-decoration:none;
 				text-transform:uppercase;
-				font-size:1em;
-				color:white;
 			}
 
 			#resumeButton{
@@ -137,7 +126,7 @@
 
 			}
 
-			#logo{
+			#logo {
 				float:left;
 				margin-top:1%;
 				margin-left:1%;
@@ -199,11 +188,6 @@
 				padding-bottom:5%;
 			}
 
-			#about a{
-				text-decoration: none;
-				color:white;
-			}
-
 			#headShot {
 				margin-top:50px;
 				max-width:30vh;
@@ -217,12 +201,6 @@
 				padding-top:20vh;
 				padding-bottom:20vh;
 			}	
-
-			#skills a {
-				text-decoration:none;
-				color:white;
-				font-size:1em;
-			}
 
 			#skillswrap {
 				padding:10px;
@@ -240,14 +218,13 @@
 			.modallcontent h3{
 				color:white;
 			}
+
 			.modallcontent li{
 				font-size:1em;
 			}
 
-
 			#skillswrap img{
-				margin:1em;
-				
+				margin:1em;	
 			}
 
 			.skillbox:hover{
@@ -255,26 +232,27 @@
 				cursor:pointer;
 			}
 
+			/* Spelled "modall" because I did not want to use bootstrap modal. Default hidden, stays covering 100% of screen.  Scroll is enabled if needed. */
 			#modall {
-				display: none; /* Hidden by default */
-				position: fixed; /* Stay in place */
-				z-index: 1; /* Sit on top */
+				display: none; 
+				position: fixed; 
+				z-index: 1; 
 				left: 0;
 				top: 0;
-				width: 100%; /* Full width */
-				height: 100%; /* Full height */
-				overflow: auto; /* Enable scroll if needed */
-				background-color: rgb(0,0,0); /* Fallback color */
-				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+				width: 100%;
+				height: 100%;
+				overflow: auto; 
+				background-color: rgb(0,0,0); 
+				background-color: rgba(0,0,0,0.4); 
 				background-color: #121212;
 			}
 
 			/* Modall Content/Box */
 			.modallcontent {
 				background-color: #212121;
-				margin: 10% auto; /* 15% from the top and centered */
+				margin: 10% auto; 
 				padding: 20px;
-				width: 80%; /* Could be more or less, depending on screen size */
+				width: 80%; 
 				border-radius:10px;
 			}
 
@@ -382,6 +360,7 @@
 
 			}
 
+			/* Animation on each of the form inputs (makes text rise above input box)*/
 			.form input:focus + .label-name .content-name, 
 			.form input:valid + .label-name .content-name,
 			.form input:focus + .label-email .content-email, 
@@ -420,8 +399,6 @@
 				padding-bottom:5%;
 			}
 
-
-
 			/*************************footer*****************************************************************/
 
 			footer{
@@ -429,15 +406,6 @@
 				margin-top:20px;
 				background-color:#212121;
 				text-align:center;
-			}
-
-			footer a{
-				color:lightgrey;
-				font-weight:bold;
-				text-decoration: none;
-				float:left;
-				display: inline;
-				padding: 0 20px 0 20px;
 			}
 
 			footer li{
@@ -468,5 +436,4 @@
 
 			#underFooter {
 				background:#212121;
-
 			}
