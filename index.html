@@ -1,53 +1,80 @@
 <!DOCTYPE html>
+	<!-- 
+		Alex Hanna Website (MIT Maker Portfolio Submission)
+		URL - alexhanna.me
+		Hosted - netlify.com (alexwhanna.netlify.com)
+		Last Updated 10/26/19
+	-->
 <html>
 	<head>
+		<!-- metadata-->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, intial-scale=1">
+		<meta name="keywords" content="Alex-Hanna,alexhanna,alex-hanna,Alex-hanna,computer-science,javascript,css,html,GHS,Greenwich-High-School">
 		<meta property="og:image" content="img/headShot2.jpg">
-		<meta name="description" content="Alex Hanna wbesite">
+		<meta name="description" content="Alex Hanna website">
 		<meta name="author" content="Alex Hanna">
 		<title>Alex Hanna</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- Fonts import-->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:black&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap import-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<!-- jQuery import-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- JavaScript -->
 		<script src="alexLanding.js"></script>
+
 	</head>
 
 	<body>
 
-		<header>
+		<!-- Landing page/header section-->
+		<header> 
 			<div id="navbar">
+
+				<!-- logo on top left corner of screen-->
 				<div id="logo">
-					<a href="index.html">
+					<a href="alexhanna.html">
 						<h1 id="logotext">
 							AH
 						</h1>
 					</a>
 				</div>
+
+				<!-- animated button which goes to resume at bottom of page-->
 				<nav>
 					<ul> 
 						<li><a href="#resume" id="resumeButton"><span>R&eacute;sum&eacute;</span></a></li>
 					</ul>
 				</nav>
+
 			</div>
+
+			<!-- name in center of screen-->
 			<div id="backgroundtext">
 				<div id="verticalname">
 					<p>ALEX<br>HANNA</p>
 				</div>
 			</div>
 
+			<!-- scroll instruction-->
 			<div id="scroll">
 				<p>scroll</p>
 			</div>
-
 		</header>
 
-
+		<!-- About me section-->
 		<section id="about">
 			<div class="container">
-				<div class="row d-flex justify-content-center" class="d-flex align-items-center">
+				<div class="row">
 					<div class="col-md-4" style="padding-top:5vh;">
 						<h2>
 							About me
@@ -57,7 +84,7 @@
 						</p>
 					</div>
 					<div class="col-md-4">
-						<img name="slide" id="headShot" src="img/headShot2.jpg" >
+						<img id="headShot" src="img/headShot2.jpg" alt="Alex Hanna headshot">
 					</div>
 					<div class="col-md-4" style="padding-top:5vh;">
 						<h2>
@@ -66,8 +93,8 @@
 						<ul>
 							<a href="https://www.greenwichschools.org/greenwich-high-school"><li>Greenwich High School 2020</li></a>
 							<a href="https://www.scouting.org/resources/guide-to-advancement/eagle-scout-rank/"><li>Eagle Scout</li></a>
-							<a href="https://www.ghswaterpolo.org"><li>Varsity Water Polo</li></a>
-							<a href="http://www.greenwichcardinalsathletics.assn.la/Bulletins.asp?MyTeam=853736&org=GREENWICHCARDINALSATHLETICS"><li>Varsity Swimming</li></a>
+							<a href="https://www.ghswaterpolo.org"><li>Varsity Water Polo Team</li></a>
+							<a href="http://www.greenwichcardinalsathletics.assn.la/Bulletins.asp?MyTeam=853736&org=GREENWICHCARDINALSATHLETICS"><li>Varsity Swim Team</li></a>
 							<a href="https://www.greenwichschools.org/greenwich-high-school/student-life/student-government"><li>Senior Class Vice President</li></a>
 							<a href="https://greenwich.myclubsource.com/clubs/programmingclub"><li>Programming Club President</li></a>
 						</ul>
@@ -76,9 +103,13 @@
 			</div>
 		</section>
 
-
+		<!-- My skills section-->
 		<section id="skills">
+
+				<!-- Modal - appears when one of the skills (below) is clicked. I did not use the bootstrap modal for this. -->
 				<div id="modall">
+
+					<!-- Content to appear for each specific skill selected-->
   					<div class="modallcontent" id="javaContent">
 						<span class="close">&times;</span>
 						<h2>Java</h2>
@@ -87,8 +118,8 @@
 						<h3><br>Experience</h3>
 							<li> 2 years </li>
 						<h3><br>Related Knowledge:</h3>
-							<li><a>Object-Oriented Programming</a></li>
-							<li><a>Eclipse IDE</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-Oriented Programming</a></li>
+							<li><a href="https://www.eclipse.org/ide/">Eclipse IDE</a></li>
 					</div>
 					<div class="modallcontent" id="javascriptContent">
 						<span class="close">&times;</span>
@@ -97,10 +128,14 @@
 							<li><a href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles">AP Computer Science Principles</a></li>
 						<h3><br>Experience</h3>
 							<li> 4 years </li>
+						<!--LINKS TO WEBSITES CURRENTLY ONLINE-->
 						<h3><br>Portfolio:</h3>
-							<li><a href="alexwhanna.netlify.com">Alex Hanna Website</a></li>
-							<li><a href="tmaconstruction.netlify.com">TMA Construction</a></li>
-							<li><a href="gpacalculatorsite.netlify.com">GPA Calculator</a></li>
+							<li><a href="https://alexhanna.me">Alex Hanna Website</a></li>
+							<li><a href="https://tmaconstruction.netlify.com">TMA Construction</a></li>
+							<li><a href="http://33243936.nhd.weebly.com/index.html">National History Day Website (Group Project, programming lead by Tobin Hirsch)</a></li>
+							<li><a href="https://andrewhanna.netlify.com">Drew's Tractor Repair</a></li>
+							<li><a href="https://awhcompsci.netlify.com">School Projects</a></li>
+							<li><a href="https://github.com/awh26">GitHub</a></li>
 						<h3><br>Related Knowledge:</h3>
 							<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
 							<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
@@ -114,6 +149,7 @@
 						<h2>Final Cut Pro X</h2>
 						<h3>Experience</h3>
 							<li> 5 years </li>
+						<!--Links to two of my videos-->
 						<h3><br>Portfolio:</h3>
 							<li><a href="https://www.youtube.com/watch?v=kkAsRKhFG04">"Summer 19 Edit"</a></li>
 							<li><a href="https://www.youtube.com/watch?v=qpKEm1pswyY">"Touring Utah's National Parks"</a></li>
@@ -126,9 +162,25 @@
 						<h2>Adobe Photoshop CC</h2>
 						<h3>Experience</h3>
 							<li> 2 years </li>
-						<h3><br>Portfolio:</h3>
-							<img src="portfolio/photoshop/schong.png" style="width:100px; height:150px;">
-							<img src="photoshop/bogusbasin.png" style="width:100px; height:100px;">
+						<!--Embedded images-->
+						<div class="row">
+							<div class="col-md-12">
+								<h3><br>Portfolio:</h3>
+							</div>
+							<div class="col-md-4">
+								<li> <a href="https://twitter.com/Alexwh26/status/1158823100311658502?s=20"> Schongalla Preserve Map </a> </li>
+								<img src="portfolio/photoshop/schong.png" style="width:80%;">
+							</div>
+							<div class="col-md-4">
+								<li> <a href="https://www.etsy.com/listing/728641441/bogus-basin-map-idaho-id-ski-snowboard?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=bogus+art&ref=sc_gallery-1-5&plkey=1db97d43b511eb753ef610bf333be4c554b27791%3A728641441&frs=1"> Bogus Basin Minimalist Map Art</a> </li>
+								<img src="portfolio/photoshop/bogusbasin.jpg" style="width:80%;">
+							</div>
+							<div class="col-md-4">
+								<li> <a href="https://www.etsy.com/listing/728643127/bridger-bowl-montana-mt-ski-snowboard?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=bridger+bowl&ref=sr_gallery-1-3&organic_search_click=1&frs=1"> Bridger Bowl Minimalist Map Art</a> </li>
+								<img src="portfolio/photoshop/bridgerbowl.png" style="width:80%;">
+							</div>
+						</div>
+						
 						<h3><br>Related Knowledge:</h3>
 							<li><a href="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a></li>
 							<li><a href="http://photoscape.org/ps/main/index.php">Photoscape X</a></li>
@@ -142,13 +194,20 @@
 						<h3><br>Portfolio:</h3>
 							<li><a href="https://www.aerialgreenwich.com">Work with Aerial Greenwich</a></li>
 							<li><a href="https://www.youtube.com/watch?v=kkAsRKhFG04">"Summer 19 Edit" (and other vidoes shot with drones and edited for youtube)</a></li>
-							<li><a href="">Photos/Videos</a></li>
+							<li><a href="https://drive.google.com/drive/folders/1_lYc7fIKcQ2h3zr-8sJu2bIeqq0-PTmH?usp=sharing">Photos/Videos</a></li>
 						<h3><br>Related Knowledge:</h3>
 							<li><a href="https://www.dji.com/phantom-3-standard">DJI Phantom 3</a></li>
 							<li><a href="https://www.dji.com/phantom-4">DJI Phantom 4</a></li>
 							<li><a href="http://www.symatoys.com/goodshow/x5c-syma-x5c-explorers.html">Syma x5c</a></li>
 					</div>
-
+					<div class="modallcontent" id="resumeContent">
+						<span class="close">&times;</span>
+						<!-- embedded pdf resume popout-->
+						<div id="pdf">
+							<a href="alexResume.html"><embed class="pdfobject" src="ALEXHANNAcol.pdf" type="application/pdf" style="overflow: auto; height:80vh; min-width:70%"></a>
+						</div>
+					</div>
+					
 				</div>
 
 			<div class="container" >
@@ -157,40 +216,39 @@
 						<h2>Skills</h2>
 					</div>
 					<div class="col-md-4 skillbox" onclick="openTab('javaExpand');" id="javabox">
-						<img src="img/javalogo.png" style="width:100px; height:100px;">
+						<img src="img/javalogo.png" style="width:100px; height:100px;" alt="Java Logo">
 						<h3>Java</h3>
 					</div>
 					<div class="col-md-4 skillbox" onclick="openTab('javascriptExpand');" id="javascriptbox">
-						<img src="img/javascriptlogo.png" style="width:100px; height:100px;">
-						<h3>Javascript/HTML/CSS</h3>
+						<img src="img/javascriptlogo.png" style="width:100px; height:100px;" alt="HTML5 Logo">
+						<h3>Javascript / HTML / CSS</h3>
 					</div>
 					<div class="col-md-4 skillbox" onclick="openTab('finalcutExpand');">
-						<img src="img/finalcutlogo.png" style="width:100px; height:100px;">
+						<img src="img/finalcutlogo.png" style="width:100px; height:100px;" alt="Final Cut Pro Logo">
 						<h3>Final Cut Pro X</h3>
 					</div>
 					<div class="col-md-4 skillbox" onclick="openTab('photoshopExpand');">
-						<img src="img/photoshoplogo.png" style="width:100px; height:100px;">
+						<img src="img/photoshoplogo.png" style="width:100px; height:100px;" alt="Adobe Photoshop Logo">
 						<h3>Adobe Photoshop CC</h3>
 					</div>
 					<div class="col-md-4 skillbox" onclick="openTab('photographyExpand');">
-						<img src="img/drone.png" style="width:190px; height:100px;">
+						<img src="img/drone.png" style="width:190px; height:100px;" alt="Drone Clipart">
 						<h3>Aerial Photography</h3>
-
 					</div>
-
 				</div>
 			</div>
 		</section>
 
-
+		<!-- Contact me form section. Has animations but IS NOT FUNCTIONAL (yet). -->
 		<section id="contact">
-			<div class="container" >
+			<div class="container">
 				<div class="row">
 					<h2 class="col-md-12" id="getInTouch">
 						Get in touch
 					</h2>
-
 				</div>
+
+				<!-- Input fields-->
 				<div class="row" id="namediv">
 					<div class="form">
 						<input type="text" class="messageForm" id="nameInput" required />
@@ -215,6 +273,8 @@
 						</label>
 					</div>
 				</div>
+
+				<!-- Submit button-->
 				<div id="buttondiv">
 					<div>
 						<button type="submit" id="emailbutton" onclick="emailSubmit()"><span>Send</span></button>
@@ -223,19 +283,21 @@
 			</div>
 		</section>
 
-
+		<!-- Resume section-->
 		<section id="resume">
 			<div class="container">
 				<h2>
 					R&eacute;sum&eacute;
 				</h2>
-				<div id="pdf">
-					<a href="alexResume.html"><embed class="pdfobject" src="ALEXHANNAcol.pdf" type="application/pdf" style="overflow: auto; width:40vw; height:60vh;"></a>
+
+				<!-- embedded pdf resume -->
+				<div id="pdf" onclick="openTab('resumeExpand');">
+					<embed class="pdfobject" src="ALEXHANNAcol.pdf" type="application/pdf" style="overflow: auto; width:40vw; height:60vh;">
 				</div>
 			</div>
 		</section>
 
-
+		<!-- Footer section (links to social sites, footer)-->
 		<footer>
 			<div id="socialWrap">
 				<div>
