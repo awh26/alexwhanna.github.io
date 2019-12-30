@@ -160,12 +160,13 @@
 				z-index:1;
 				position:absolute;
 				color:#121212;
-				margin-top:90vh;
+				margin-top:85vh;
 				width:100%;
 			}
 
 			#scroll p {
 				text-align:center;
+				font-size:200%;
 			}
 
 
