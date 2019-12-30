@@ -415,24 +415,19 @@
 
 			#socialWrap {
 				display:grid;
-				grid-template-columns:1fr 1fr;
+				grid-template-columns:1fr 1fr 1fr;
 				padding:10px;
 				text-align:center;
 				grid-gap:1em;
+				width:20%;
+				margin-left:auto;
+				margin-right:auto;
 			}
 
 			#socialWrap img {
 				width:50px; 
 				height:50px;
 				margin-bottom:1em;
-			}
-
-			#linkedinlink{
-				float:left;
-			}
-
-			#twitterlink{
-				float:right;
 			}
 
 			#underFooter {
