@@ -382,6 +382,27 @@
 				transform: translateX(0%);
 			}
 
+			/*************************press*****************************************************************/
+
+			#press {
+				padding-top:18vh;
+				padding-bottom:10vh;
+			}	
+
+			.card {
+				overflow:hidden;
+				background-color:#212121;
+			}
+			.card-text {
+				word-wrap: break-word;
+			}
+
+			.card-body a {
+				background-color:#BB86FC;
+				border:3px solid #BB86FC;
+
+			}
+
 			/*************************resume*****************************************************************/
 
 			#resume{
