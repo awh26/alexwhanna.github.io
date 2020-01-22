@@ -72,32 +72,34 @@
 				text-transform:uppercase;
 			}
 
-			#resumeButton{
+			#resumeButton {
 				transition:all 0.3s;
-				float:right;
 			}
 
-			.resumeButtonorig{
+			.resumeButtonorig {
 				color:black;
 			}
 
-			.resumeButtonchange{
+			.resumeButtonchange {
 				color:white;
 			}
 
-			#emailbutton:hover{
+			#emailbutton:hover,
+			.articleLinks {
 				cursor:pointer;
 			}
 
 			#resumeButton span, 
-			#emailbutton span{
+			#emailbutton span,
+			.articleLinks span{
 				display:inline-block;
 				position:relative;
 				transition:0.5s;
 			}
 
 			#resumeButton span:after, 
-			#emailbutton span:after{
+			#emailbutton span:after,
+			.articleLinks span:after{
 				content: "\00bb";
 				position: absolute;
 				opacity:0;
@@ -108,13 +110,15 @@
 			}
 
 			#resumeButton:hover span, 
-			#emailbutton:hover span {
+			#emailbutton:hover span,
+			.articleLinks:hover span {
 				padding-right: 25px;
 				color:#BB86FC;
 			}
 
 			#resumeButton:hover span:after,
-			#emailbutton:hover span:after {
+			#emailbutton:hover span:after,
+			.articleLinks:hover span:after {
 				opacity:1;
 				right:0;
 			}
@@ -289,13 +293,7 @@
 				height:100%;
 			}
 
-			#buttondiv {
-				padding-top:30px;
-				width:100%;
-				align-items:center;
-			}
-
-			#emailbutton{
+			#emailbutton {
 				position:absolute;
 				height:38px;
 				width:100px;
@@ -397,10 +395,13 @@
 				word-wrap: break-word;
 			}
 
-			.card-body a {
-				background-color:#BB86FC;
-				border:3px solid #BB86FC;
-
+			.articleLinks {
+				padding:10px;
+				width:100px;
+				border:0px;
+				color:#BB86FC;
+				transition:all 0.5s;
+				border-radius:2px;
 			}
 
 			/*************************resume*****************************************************************/
