@@ -1,0 +1,410 @@
+body {
+	background-color: white;
+	transition: 0.3s all;
+	/* Creates a smooth transition when inverting the background and text color*/
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p,
+a,
+li,
+button {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* When hovering on any link, the text will turn grey and the cursor will become a pointer */
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+	color: lightgrey;
+}
+
+/* Establishes all h2's as being purple and centered with some padding only on the top */
+h2 {
+	color: #BB86FC;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.container {
+	overflow: hidden;
+	text-align: center;
+}
+
+.modalDetail {
+	margin-bottom:2rem;
+}
+
+/********************************* LANDING PAGE *******************************/
+#home {
+    background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	display:table;
+}
+
+.landing-text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width:80%;
+}
+
+#home h1 {
+	font-family: sans-serif;
+	font-size:15rem;
+	line-height: 1.2;
+	font-weight:3rem;
+	color:rgb(0,0,0,0.4);
+	-webkit-text-stroke-width: .1rem;
+  	-webkit-text-stroke-color: white;
+}
+
+nav {
+	float:right;
+	margin-top:1rem;
+	margin-left:1.5rem;
+}
+
+#landing li {
+	display: inline;
+	padding: 0 1.5rem 0 2rem;
+}
+
+#landing {
+	text-transform: uppercase;
+}
+
+#logo {
+	float: left;
+	margin-top: 1%;
+	margin-left: 1%;
+
+}
+
+#logo h1 {
+	margin: 0;
+	font-family: sans-serif;
+	transition: all 0.3s;
+}
+
+#navbar {
+	position: fixed;
+	width: 100%;
+}
+
+#scroll {
+	z-index: 1;
+	position: absolute;
+	color: white;
+	margin-top: 85vh;
+	width: 100%;
+}
+
+#scroll p {
+	text-align: center;
+	font-size: 200%;
+}
+
+#resumeButton {
+	transition: all 0.3s;
+}
+
+.resumeButtonorig {
+	color: black;
+}
+
+.resumeButtonchange {
+	color: white;
+}
+
+/******************************** buttons ***********************/
+#emailbutton:hover,
+.articleLinks {
+	cursor: pointer;
+}
+
+#resumeButton span,
+#emailbutton span,
+.articleLinks span {
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#resumeButton span:after,
+#emailbutton span:after,
+.articleLinks span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	color: #BB86FC;
+}
+
+#resumeButton:hover span,
+#emailbutton:hover span,
+.articleLinks:hover span {
+	padding-right: 25px;
+	color: #BB86FC;
+}
+
+#resumeButton:hover span:after,
+#emailbutton:hover span:after,
+.articleLinks:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/*************************about*****************************************************************/
+
+#about {
+	color: white;
+}
+
+#about p {
+	text-align: left;
+	padding: 5%;
+	padding-top: 1%;
+}
+
+#about ul {
+	text-align: left;
+	padding-left: 20%;
+	padding-top: 1%;
+	padding-bottom: 5%;
+}
+
+#headShot {
+	margin-top: 50px;
+	max-width: 30vh;
+	border: 3px solid #BB86FC;
+}
+
+
+/*************************skills***********************************************************************/
+
+#skillswrap {
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: white;
+}
+
+#skillswrap div {
+	padding: 2em;
+	border-radius: 10px;
+}
+
+.modallcontent h3 {
+	color: white;
+}
+
+.modallcontent li {
+	font-size: 1em;
+}
+
+#skillswrap img {
+	margin: 1em;
+}
+
+.skillbox:hover {
+	background-color: #212121;
+	cursor: pointer;
+}
+
+/*************************contact*****************************************************************/
+#contact {
+	background: #121212;
+	padding-bottom: 20vh;
+	padding-top: 2vh;
+}
+
+#contactcontain {
+	height: 100%;
+}
+
+#emailbutton {
+	position: absolute;
+	height: 38px;
+	width: 100px;
+	margin-left: -50px;
+	background-color: #212121;
+	border: 0px;
+	color: white;
+	transition: all 0.5s;
+	border-radius: 2px;
+}
+
+.form {
+	width: 50%;
+	position: relative;
+	height: 75px;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -25%;
+	color: white;
+}
+
+.form input {
+	width: 100%;
+	height: 100%;
+	color: white;
+	padding-top: 20px;
+	border: none;
+	outline: none;
+	background-color: #121212;
+
+}
+
+.form label {
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+
+}
+
+.form label::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -1px;
+	height: 100%;
+	width: 100%;
+	border-bottom: 3px solid #BB86FC;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+
+.content-name,
+.content-email,
+.content-message {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	transition: all 0.3s ease;
+
+}
+
+/* Animation on each of the form inputs (makes text rise above input box)*/
+.form input:focus+.label-name .content-name,
+.form input:valid+.label-name .content-name,
+.form input:focus+.label-email .content-email,
+.form input:valid+.label-email .content-email,
+.form input:focus+.label-message .content-message,
+.form input:valid+.label-message .content-message {
+	transform: translateY(-150%);
+	font-size: 1em;
+	color: #BB86FC;
+}
+
+.form input:focus .label-name::after,
+.form input:valid+.label-name::after,
+.form input:focus .label-email::after,
+.form input:valid+.label-email::after,
+.form input:focus .label-message::after,
+.form input:valid+.label-message::after {
+	transform: translateX(0%);
+}
+
+/*************************press*****************************************************************/
+
+#press {
+	padding-top: 18vh;
+	padding-bottom: 10vh;
+}
+
+.card {
+	overflow: hidden;
+	background-color: #212121;
+}
+
+.card-text {
+	word-wrap: break-word;
+}
+
+.articleLinks {
+	padding: 10px;
+	width: 100px;
+	border: 0px;
+	color: #BB86FC;
+	transition: all 0.5s;
+	border-radius: 2px;
+}
+
+/*************************resume*****************************************************************/
+
+#resume {
+	padding-top: 18vh;
+	padding-bottom: 10vh;
+}
+
+#resume h2 {
+	padding-bottom: 2%;
+	text-align: center;
+	color: #BB86FC;
+}
+
+#pdf {
+	padding-bottom: 5%;
+}
+
+#pdf:hover {
+	cursor: pointer;
+}
+
+/*************************footer*****************************************************************/
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #212121;
+	text-align: center;
+}
+
+footer li {
+	list-style-type: none;
+}
+
+#socialWrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10px;
+	text-align: center;
+	grid-gap: 1em;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#socialWrap img {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 1em;
+}
+
+#underFooter {
+	background: #212121;
+}
