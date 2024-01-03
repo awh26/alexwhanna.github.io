@@ -1,7 +1,5 @@
 body {
-	background-color: white;
-	transition: 0.3s all;
-	/* Creates a smooth transition when inverting the background and text color*/
+	background-color: black;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -35,7 +33,14 @@ a:hover {
 
 /* Establishes all h2's as being purple and centered with some padding only on the top */
 h2 {
-	color: #BB86FC;
+	color: #daaa00;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+h3 {
+	color: #daaa00;
+	font-style:italic;
 	padding-top: 1rem;
 	text-align: center;
 }
@@ -156,14 +161,14 @@ nav {
 	top: 0;
 	right: -20px;
 	transition: 0.5s;
-	color: #BB86FC;
+	color: #daaa00;
 }
 
 #resumeButton:hover span,
 #emailbutton:hover span,
 .articleLinks:hover span {
 	padding-right: 25px;
-	color: #BB86FC;
+	color: #daaa00;
 }
 
 #resumeButton:hover span:after,
@@ -195,139 +200,9 @@ nav {
 #headShot {
 	margin-top: 50px;
 	max-width: 30vh;
-	border: 3px solid #BB86FC;
+	border: 3px solid #daaa00;
 }
 
-
-/*************************skills***********************************************************************/
-
-#skillswrap {
-	padding: 10px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align: center;
-	color: white;
-}
-
-#skillswrap div {
-	padding: 2em;
-	border-radius: 10px;
-}
-
-.modallcontent h3 {
-	color: white;
-}
-
-.modallcontent li {
-	font-size: 1em;
-}
-
-#skillswrap img {
-	margin: 1em;
-}
-
-.skillbox:hover {
-	background-color: #212121;
-	cursor: pointer;
-}
-
-/*************************contact*****************************************************************/
-#contact {
-	background: #121212;
-	padding-bottom: 20vh;
-	padding-top: 2vh;
-}
-
-#contactcontain {
-	height: 100%;
-}
-
-#emailbutton {
-	position: absolute;
-	height: 38px;
-	width: 100px;
-	margin-left: -50px;
-	background-color: #212121;
-	border: 0px;
-	color: white;
-	transition: all 0.5s;
-	border-radius: 2px;
-}
-
-.form {
-	width: 50%;
-	position: relative;
-	height: 75px;
-	overflow: hidden;
-	left: 50%;
-	margin-left: -25%;
-	color: white;
-}
-
-.form input {
-	width: 100%;
-	height: 100%;
-	color: white;
-	padding-top: 20px;
-	border: none;
-	outline: none;
-	background-color: #121212;
-
-}
-
-.form label {
-	position: absolute;
-	bottom: 0px;
-	left: 0%;
-	height: 100%;
-	width: 100%;
-	pointer-events: none;
-	border-bottom: 1px solid black;
-
-}
-
-.form label::after {
-	content: "";
-	position: absolute;
-	left: 0px;
-	bottom: -1px;
-	height: 100%;
-	width: 100%;
-	border-bottom: 3px solid #BB86FC;
-	transform: translateX(-100%);
-	transition: all 0.3s ease;
-}
-
-.content-name,
-.content-email,
-.content-message {
-	position: absolute;
-	bottom: 5px;
-	left: 0px;
-	transition: all 0.3s ease;
-
-}
-
-/* Animation on each of the form inputs (makes text rise above input box)*/
-.form input:focus+.label-name .content-name,
-.form input:valid+.label-name .content-name,
-.form input:focus+.label-email .content-email,
-.form input:valid+.label-email .content-email,
-.form input:focus+.label-message .content-message,
-.form input:valid+.label-message .content-message {
-	transform: translateY(-150%);
-	font-size: 1em;
-	color: #BB86FC;
-}
-
-.form input:focus .label-name::after,
-.form input:valid+.label-name::after,
-.form input:focus .label-email::after,
-.form input:valid+.label-email::after,
-.form input:focus .label-message::after,
-.form input:valid+.label-message::after {
-	transform: translateX(0%);
-}
 
 /*************************press*****************************************************************/
 
@@ -349,30 +224,107 @@ nav {
 	padding: 10px;
 	width: 100px;
 	border: 0px;
-	color: #BB86FC;
+	color: #daaa00;
 	transition: all 0.5s;
 	border-radius: 2px;
 }
 
-/*************************resume*****************************************************************/
+/*************************media*****************************************************************/
 
-#resume {
-	padding-top: 18vh;
-	padding-bottom: 10vh;
+* {
+	box-sizing: border-box;
+}
+  
+img {
+	vertical-align: middle;
+}
+  
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
 }
 
-#resume h2 {
-	padding-bottom: 2%;
-	text-align: center;
-	color: #BB86FC;
+/* Hide the images by default */
+.mySlides {
+	display: none;
 }
-
-#pdf {
-	padding-bottom: 5%;
-}
-
-#pdf:hover {
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
 	cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+	right: 5px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+	left: 5px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+  
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	padding: 2px 16px;
+	color: white;
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+  
+/* Six columns side by side */
+.column {
+	float: left;
+	width: 16.66%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+	opacity: 1;
 }
 
 /*************************footer*****************************************************************/

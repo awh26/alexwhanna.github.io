@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- 
 		Alex Hanna Website
-		Domain - alexhanna.me
-		Hosted - netlify.com (alexwhanna.netlify.app)
-		Last Updated: 7/29/20
+		Domain - alexwhanna.netlify.app (was formerly alexhanna.me)
+		Host - netlify.com
+		Last Updated: 12/20/23
 	-->
 <html>
 
@@ -12,12 +12,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="keywords"
-		content="Alex-Hanna,alexhanna,alex-hanna,Alex-hanna,computer-science,javascript,css,html,GHS,Greenwich-High-School">
+		content="Alex-Hanna,alexhanna,alex-hanna,Alex-hanna">
 	<meta property="og:image" content="img/headShot2.jpg">
 	<link rel="icon" href="img/headShot2.jpg">
-	<meta name="description" content="My name is Alex Hanna and I am a Senior at Greenwich High School in Greenwich, 
-			Connecticut.  I have a passion for engineering, computer science, and applied sciences.  I am a quick learner and 
-			always open to learning new skills.">
+	<meta name="description" content="My name is Alex Hanna and this is my portfolio.">
 	<meta name="author" content="Alex Hanna">
 	<title>Alex Hanna</title>
 
@@ -69,7 +67,6 @@
 
 			<!-- name in center of screen-->
 			<div class="landing-text">
-				<h1>ALEX<BR>HANNA</h1>
 				
 					<!-- scroll instruction-->
 				<a href="#about">
@@ -86,535 +83,127 @@
 	<section id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4" style="padding-top:5vh;">
+				<div class="col-md-8" style="padding-top:10vh;">
 					<h2>
 						About me
 					</h2>
 					<p>
-						My name is Alex Hanna and I am currently attending the Purdue University College of Engineering. 
-						I plan to graduate in December 2023 with a degree in both Aeronautical and Astronautical Engineering
-						with minors in Computer Science, Economics, and Mathematics.
-						<br>
-						I graduated from Greenwich High School in Greenwich, Connecticut in 2020 and was awarded the Headmaster's Award 
-						for my outstanding GPA. I have a passion for applied sciences, engineering, and computer science.  
-						I am a quick learner and always open to learning new skills.  
-						<br>
-						Last Updated - 09/2020
+						My name is Alex Hanna and I am a graduate student at Purdue University working towards an M.S. in Aeronautics and Astronautics. 
+						I completed my B.S. in Aeronautical and Astronautical Engineering in December 2023 with minors in Computer Science, Economics, and Mathematics at Purdue. 
+						This website is meant to highlight some of the cool projects I have worked on.
 					</p>
 				</div>
 				<div class="col-md-4">
-					<img id="headShot" src="img/headShot2.jpg" alt="Alex Hanna headshot">
-				</div>
-				<div class="col-md-4" style="padding-top:5vh;">
-					<div>
-						<h2>
-							Purdue University 2024
-						</h2>
-						<ul>
-							<a target="_blank" href="https://engineering.purdue.edu/AAE">
-								<li>College of Aeronautics and Astronautics</li>
-							</a>
-							<a target="_blank" href="https://boilerlink.purdue.edu/organization/waterpoloclubmens">
-								<li>Club Water Polo</li>
-							</a>
-							<a target="_blank" href="https://www.purduefiji.com/">
-								<li>Phi Gamma Delta</li>
-							</a>
-							<a target="_blank" href="https://purdueorbital.com/">
-								<li>Purdue Orbital</li>
-							</a>
-							<a target="_blank" href="https://engineering.purdue.edu/SGT/">
-								<li>Sigma Gamma Tau</li>
-							</a>
-							<a target="_blank" href="https://engineering.purdue.edu/PURT">
-								<li>Purdue UAS Research and Test Facility</li>
-							</a>
-
-						</ul>
-
-					</div>
-
-					<div>
-						<h2>
-							Greenwich High School 2020
-						</h2>
-						<ul>
-							<a target="_blank"
-								href="https://www.scouting.org/resources/guide-to-advancement/eagle-scout-rank/">
-								<li>Eagle Scout</li>
-							</a>
-							<a target="_blank" href="https://www.ghswaterpolo.org">
-								<li>Varsity Water Polo Team</li>
-							</a>
-							<a target="_blank"
-								href="http://www.greenwichcardinalsathletics.assn.la/Bulletins.asp?MyTeam=853736&org=GREENWICHCARDINALSATHLETICS">
-								<li>Varsity Swim Team</li>
-							</a>
-							<a target="_blank"
-								href="https://www.greenwichschools.org/greenwich-high-school/student-life/student-government">
-								<li>Senior Class Vice President</li>
-							</a>
-							<a target="_blank" href="https://greenwich.myclubsource.com/clubs/programmingclub">
-								<li>Programming Club President</li>
-							</a>
-						</ul>
-
-					</div>
-
-
+					<img id="headShot" src="img/headShot2.jpeg" alt="Alex Hanna headshot">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="modal">
-
-		<style>
-			#modal {
-				display: none;
-				position: fixed;
-				z-index: 1;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				overflow: auto;
-				background-color: rgb(0, 0, 0);
-				background-color: rgba(0, 0, 0, 0.4);
-				text-align: left;
-			}
-
-			#skillContain {
-				width: 80%;
-				margin: 10% auto;
-				background-color: #212121;
-				border-radius: 10px;
-				padding: 3rem;
-			}
-
-			#skillContain a {
-				color: #BB86FC;
-			}
-
-			#skillContain a:hover {
-				text-decoration: none;
-				color: #684b8b;
-				cursor: pointer;
-			}
-
-			#skillContain img {
-				width: 30%;
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.name {
-				padding-top: 1em;
-			}
-
-			#myVideo {
-				position: relative;
-				width: 100%;
-			}
-		</style>
-
-		<script>
-			function back(name) {
-				document.getElementById("modal").style.display = "none";
-				document.getElementById(name).style.display = "none";
-			}
-
-			function openTab(name) {
-				document.getElementById("modal").style.display = "block";
-				console.log(name);
-
-				document.getElementById(name).style.display = "block";
-			}
-		</script>
-
-		<div class="container" id="skillContain">
-
-			<!-- Java Section -->
-			<div id="java" style="display:none;">
-				<div class="row">
-					<div class="col-md-12">
-						<a onclick="back('java')">Back</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="name">
-							Java
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12" style="text-align:left;">
-						<div class="coursework">
-							<h4>Coursework:</h4>
-							<li><a target="_blank"
-									href="https://apcentral.collegeboard.org/courses/ap-computer-science-a">AP Computer
-									Science A</a></li>
-						</div>
-
-						<div class="experience">
-							<h4>Experience:</h4>
-							<li>2 years </li>
-						</div>
-
-						<div class="Related">
-							<h4>Related Knowledge:</h4>
-							<li><a target="_blank"
-									href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-Oriented
-									Programming</a></li>
-							<li><a target="_blank" href="https://www.eclipse.org/ide/">Eclipse IDE</a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Javascript Section -->
-			<div id="javascript" style="display:none;">
-				<div class="row">
-					<div class="col-md-12">
-						<a onclick="back('javascript')">Back</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="name">
-							Javacript
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12" style="text-align:left;">
-						<div class="modalDetail coursework">
-							<h3>Coursework:</h3>
-							<li><a target="_blank"
-									href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles">AP
-									Computer Science Principles</a></li>
-						<div class="modalDetail experience">
-							<h4>Experience:</h4>
-							<li>4 years </li>
-						</div>
-						<div class="modalDetail portfolio">
-							<h4>Portfolio:</h4>
-							<li><a target="_blank" href="https://alexhanna.me">My Personal Website</a></li>
-							<li><a target="_blank" href="http://www.algoxchange.net">AlgoX</a></li>
-							<li><a target="_blank" href="https://impulseprep.netlify.app">Impulse Prep</a></li>
-							<li><a target="_blank" href="https://hannaconsult.net">Hanna Consultants</a></li>
-							<li><a target="_blank" href="https://midwiferyclaims.com">Midwifery Claims</a></li>
-							<li><a target="_blank" href="http://33243936.nhd.weebly.com/index.html">National History Day
-									Website (Group Project, programming lead by Tobin Hirsch)</a></li>
-							<li><a target="_blank" href="https://ghsprogrammingclub.netlify.app">GHS Programming
-									Club</a></li>
-							<li><a target="_blank" href="https://awhcompsci.netlify.app">School Projects</a></li>
-						</div>
-						<div class="modalDetail Related">
-							<h4>Related Knowledge:</h4>
-							<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-								<div class="col-sm-4">
-									<img src="img/csslogo.png" style="width:100px; height:100px;" alt="CSS Logo">
-								</div>
-							</a>
-							<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-								<div class="col-sm-4">
-									<img src="img/htmllogo.png" style="width:100px; height:100px;" alt="HTML Logo">
-								</div>
-							</a>
-							<a target="_blank" href="https://getbootstrap.com">
-								<div class="col-sm-4">
-									<img src="img/bootstraplogo.png" style="width:100px; height:100px;"
-										alt="Bootstrap Logo">
-								</div>
-							</a>
-							<a target="_blank" href="https://www.sublimetext.com">
-								<div class="col-sm-4">
-									<img src="img/sublimelogo.png" style="width:100px; height:100px;"
-										alt="Sublime Text 3 Logo">
-								</div>
-							</a>
-							<a target="_blank" href="https://code.visualstudio.com">
-								<div class="col-sm-4">
-									<img src="img/vscodelogo.png" style="width:100px; height:100px;"
-										alt="Visual Studio Code Logo">
-								</div>
-							</a>
-							<a target="_blank" href="https://jquery.com">
-								<div class="col-sm-4">
-									<img src="img/jquerylogo.png" style="width:100px; height:100px;" alt="jQuery Logo">
-								</div>
-							</a>
-							<a target="_blank" href="https://sass-lang.com">
-								<div class="col-sm-4">
-									<img src="img/sasslogo.png" style="width:100px; height:100px;" alt="Sass Logo">
-								</div>
-							</a>
-							<a target="_blank" href="http://jade-lang.com">
-								<div class="col-sm-4">
-									<img src="img/jadelogo.png" style="width:100px; height:100px;" alt="Jade Logo">
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Python Section -->
-			<div id="python" style="display:none;">
-				<div class="row">
-					<div class="col-md-12">
-						<a onclick="back('python')">Back</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="name">
-							Python
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="coursework">
-							<h4>Coursework:</h4>
-							<li><a target="_blank"
-									href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/">MIT
-									OCW - Introduction to Computer Science and Programming in Python (16.001)</a></li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="experience">
-							<h4>Experience:</h4>
-							<li>1 year</li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="Related">
-							<h4>Related Knowledge:</h4>
-							<li><a target="_blank" href="https://www.sublimetext.com">Sublime Text 3</a></li>
-							<li><a target="_blank" href="https://code.visualstudio.com">Visual Studio Code</a></li>
-							<li><a target="_blank" href="https://www.pygame.org/news">pygame</a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- finalcutpro Section -->
-			<div id="finalcutpro" style="display:none;">
-				<div class="row">
-					<div class="col-md-12">
-						<a onclick="back('finalcutpro')">Back</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="name">
-							Final Cut Pro X
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="video">
-							<iframe width="420" height="315"
-								src="https://www.youtube.com/watch?v=kkAsRKhFG04">
-							</iframe>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="experience">
-							<h4>Experience:</h4>
-							<li>5 years</li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<!--LINKS TO WEBSITES CURRENTLY ONLINE-->
-						<div class="portfolio">
-							<h4>Portfolio:</h4>
-							<li><a target="_blank" href="https://www.youtube.com/watch?v=kkAsRKhFG04">"Summer 19
-									Edit"</a></li>
-							<li><a target="_blank" href="https://www.youtube.com/watch?v=qpKEm1pswyY">"Touring Utah's
-									National Parks"</a></li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="Related">
-							<h4>Related Knowledge:</h4>
-							<li><a target="_blank" href="https://www.apple.com/imovie/">iMovie</a></li>
-							<li><a target="_blank" href="https://www.adobe.com/products/premiere.html">Premiere Pro CC
-									(limited)</a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Photoshop Section -->
-			<div id="photoshop" style="display:none;">
-				<div class="row">
-					<div class="col-md-12">
-						<a onclick="back('photoshop')">Back</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="name">
-							Adobe Photoshop CC
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="experience">
-							<h4>Experience:</h4>
-							<li>2 years</li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<!--LINKS TO WEBSITES CURRENTLY ONLINE-->
-						<div class="portfolio">
-							<h4>Portfolio:</h4>
-							<div class="row">
-								<div class="col-md-4">
-									<li> <a target="_blank"
-											href="https://twitter.com/Alexwh26/status/1158823100311658502?s=20">
-											Schongalla Preserve Map </a> </li>
-									<img src="portfolio/photoshop/schong.png" style="width:80%;">
-								</div>
-								<div class="col-md-4">
-									<li> <a target="_blank"
-											href="https://www.etsy.com/listing/728641441/bogus-basin-map-idaho-id-ski-snowboard?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=bogus+art&ref=sc_gallery-1-5&plkey=1db97d43b511eb753ef610bf333be4c554b27791%3A728641441&frs=1">
-											Bogus Basin Minimalist Map Art</a> </li>
-									<img src="portfolio/photoshop/bogusbasin.jpg" style="width:80%;">
-								</div>
-								<div class="col-md-4">
-									<li> <a target="_blank"
-											href="https://www.etsy.com/listing/728643127/bridger-bowl-montana-mt-ski-snowboard?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=bridger+bowl&ref=sr_gallery-1-3&organic_search_click=1&frs=1">
-											Bridger Bowl Minimalist Map Art</a> </li>
-									<img src="portfolio/photoshop/bridgerbowl.png" style="width:80%;">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="Related">
-							<h4>Related Knowledge:</h4>
-							<li><a target="_blank" href="https://www.adobe.com/products/illustrator.html">Adobe
-									Illustrator</a></li>
-							<li><a target="_blank" href="http://photoscape.org/ps/main/index.php">Photoscape X</a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!-- Aerial Photography Section -->
-			<div id="aerialphoto" style="display:none;">
-				<div class="row">
-					<div class="col-md-12">
-						<a onclick="back('aerialphoto')">Back</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="name">
-							Aerial Photography
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="experience">
-							<h4>Experience:</h4>							
-							<li> 6 years </li>
-							<li> 4 years - DJI Phantom Series </li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="portfolio">
-							<h4>Portfolio:</h4>
-							<li><a target="_blank" href="https://www.aerialgreenwich.com">Work with Aerial Greenwich</a>
-							</li>
-							<li><a target="_blank" href="https://www.youtube.com/watch?v=kkAsRKhFG04">"Summer 19 Edit"
-									(and other vidoes shot with drones and edited for youtube)</a></li>
-							<li><a target="_blank"
-									href="https://drive.google.com/drive/folders/1_lYc7fIKcQ2h3zr-8sJu2bIeqq0-PTmH?usp=sharing">Photos/Videos</a>
-							</li>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="Related">
-							<h4>Related Knowledge:</h4>
-							<li><a target="_blank" href="https://www.dji.com/phantom-3-standard">DJI Phantom 3</a></li>
-							<li><a target="_blank" href="https://www.dji.com/phantom-4">DJI Phantom 4</a></li>
-							<li><a target="_blank"
-									href="http://www.symatoys.com/goodshow/x5c-syma-x5c-explorers.html">Syma x5c</a>
-							</li>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-
-	<!-- My skills section-->
-	<section id="skills">
+	<!-- Portfolio section-->
+	<section>
 		<div class="container">
-			<div class="row" id="skillswrap">
+			<div class="row">
 				<div class="col-md-12">
-					<h2>Skills</h2>
+					<h2>
+						Dragonfly
+					</h2>
 				</div>
-				<div class="col-md-4 skillbox" onclick="openTab('java');" id="javabox">
-					<img src="img/javalogo.png" style="width:100px; height:100px;" alt="Java Logo">
-					<h3>Java</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h3>
+						About
+					</h3>
+					<p>
+						DRAGONfly is an autonomous glider designed to deliver a data vault from high altitude weather balloons 
+						to ground stations. This vehicle was designed for the NASA Balloon Program Office as a part of the 
+						<a href="https://floatingdragon.nianet.org/" target="_blank"><u>FLOATing DRAGON</u></a>  
+						competition beginning in August 2022. After submitting a conceptual design in January 2023, the 
+						DRAGONfly was selected as one of the six finalist vehicles to be built for a test flight in August 2023.
+						<br>
+						Click <u><a href="https://purdue-dragonfly.netlify.app/" target="_blank">here</a></u> for a link to the full project page.
+					</p>
 				</div>
-				<div class="col-md-4 skillbox" onclick="openTab('javascript');" id="javascriptbox">
-					<img src="img/javascriptlogo.png" style="width:100px; height:100px;" alt="HTML5 Logo">
-					<h3>Javascript / HTML / CSS</h3>
+				<div class="col-md-6" style="padding-top:5vh; padding-bottom:5vh;">
+					<a href="https://purdue-dragonfly.netlify.app/" target="_blank"><img src="img/portfolio/dragonfly/DRAGONfly.PNG" style="width:100%"></a>
 				</div>
-				<div class="col-md-4 skillbox" onclick="openTab('python');" id="pythonbox">
-					<img src="img/pythonlogo.png" style="width:100px; height:100px;" alt="Python Logo">
-					<h3>Python</h3>
-				</div>
-				<div class="col-md-4 skillbox" onclick="openTab('finalcutpro');">
-					<img src="img/finalcutlogo.png" style="width:100px; height:100px;" alt="Final Cut Pro Logo">
-					<h3>Final Cut Pro X</h3>
-				</div>
-				<div class="col-md-4 skillbox" onclick="openTab('photoshop');">
-					<img src="img/photoshoplogo.png" style="width:100px; height:100px;" alt="Adobe Photoshop Logo">
-					<h3>Adobe Photoshop CC</h3>
-				</div>
-				<div class="col-md-4 skillbox" onclick="openTab('aerialphoto');">
-					<img src="img/drone.png" style="width:190px; height:100px;" alt="Drone Clipart">
-					<h3>Aerial Photography</h3>
+				<div class="col-md-3">
+					<h2>
+						Design Specs
+					</h2>
+					<p style="text-align:left; padding-top:2vh;">
+						Weight: 9.5 kg
+						<br>
+						Length: 120 cm
+						<br>
+						Wing Span: 140 cm
+						<br>
+						Wing Chord: 20.5 cm
+						<br>
+						Wing Airfoil: Clark Y
+						<br>
+						Tail Span: 60 cm
+						<br>
+						Tail Chord: 20 cm
+						<br>
+						Tail Airfoil: NACA 0012
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- pricing, place for built websites - preview? -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>
+						Senior Design
+					</h2>
+					<p>
+						
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h3>
+						About
+					</h3>
+					<p>
+						This project was completed as part of the AAE418 class. The purpose was to design an autonomous method of last-mile delivery. Given numerous technical specifications, myself and my team designed, built, and tested our vehicle.
+					</p>
+				</div>
+				<div class="col-md-6" style="padding-top:8vh; padding-bottom:5vh;">
+					<img src="img/portfolio/design/seniordesign.PNG" style="width:100%">
+				</div>
+				<div class="col-md-3">
+					<h2>
+						Design Specs
+					</h2>
+					<p style="text-align:left; padding-top:2vh;">
+						Weight: 15.4 lbs
+						<br>
+						Length: 6.69 ft
+						<br>
+						Wing Span: 11 ft
+						<br>
+						Wing Chord: 19 in
+						<br>
+						Wing Airfoil: NACA 7412
+						<br>
+						Tail Span: 4.5 ft
+						<br>
+						Tail Chord: 17.75 in
+						<br>
+						Tail Airfoil: NACA 0012
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!-- Me in the Press -->
 
@@ -622,7 +211,7 @@
 		<div class="container">
 			<div class="row" style="padding-bottom: 50px;">
 				<div class="col-md-12">
-					<h2>Recent Press</h2>
+					<h2>Me in the press</h2>
 				</div>
 			</div>
 			<div class="card-deck">
@@ -710,36 +299,92 @@
 		</div>
 	</section>
 
-	<!-- Resume section-->
-	<section id="resume">
+	<!-- Me in the wild -->
+		<section id="media" style="padding-top:5vh; padding-bottom:5vh;">
+		<h2 style="text-align:center; padding-bottom:2vh;">Me in the wild</h2>
+		<p style="text-align:center;"><i>(click on an image below to get started)</i></p>
+		
 		<div class="container">
-			<h2>
-				R&eacute;sum&eacute;
-			</h2>
-			<div class="embed-responsive embed-responsive-1by1">
-				<iframe class="embed-responsive-item" src="ALEXHANNAcol.pdf"></iframe>
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="img/wild/grad.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="img/wild/golf.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="img/wild/baseball.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="img/wild/arizona.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="img/wild/car.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="img/wild/nashville.jpeg" style="width:100%">
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+		
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+		
+			<div class="row">
+				<div class="column">
+					<img class="demo cursor" src="img/wild/grad.jpg" style="width:100%" onclick="currentSlide(1)" alt="BSAAE Graduation, Dec 2023">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/wild/golf.png" style="width:100%" onclick="currentSlide(2)" alt="Golfing in Phoenix, AZ, Jul 2023">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/wild/baseball.jpg" style="width:100%" onclick="currentSlide(3)" alt="Padres game, Jul 2023">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/wild/arizona.jpg" style="width:100%" onclick="currentSlide(4)" alt="&quot;A Hill&quot;, May 2023">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/wild/car.jpg" style="width:100%" onclick="currentSlide(5)" alt="Hanging out at Lake Mead, Jul 2022">
+				</div>    
+				<div class="column">
+					<img class="demo cursor" src="img/wild/nashville.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Nashville, Feb 2022">
+				</div>
 			</div>
 		</div>
 	</section>
+
+
 
 	<!-- Footer section (links to social sites, footer)-->
 	<footer>
 		<div id="socialWrap">
 			<div>
 				<li><a target="_blank" href="https://twitter.com/Alexwh26" class="socialLink" id="twitterlink"><img
-							src="img/twitterlogo.png"></a></li>
+							src="img/logos/twitterlogo.png"></a></li>
 			</div>
 			<div>
 				<li><a target="_blank" href="https://www.linkedin.com/in/alex-hanna" class="socialLink"
-						id="linkedinlink"><img src="img/linkedinlogo.png"></a></li>
+						id="linkedinlink"><img src="img/logos/linkedinlogo.png"></a></li>
 			</div>
 			<div>
 				<li><a target="_blank" href="https://github.com/awh26" class="socialLink"><img
-							src="img/githublogo.png"></a></li>
+							src="img/logos/githublogo.png"></a></li>
 			</div>
 		</div>
 		<div id="underFooter" style="color:white;">
-			<p>Alex Hanna, Copyright &copy; 2020 </p>
+			<p>Alex Hanna, Copyright &copy; 2020</p>
 		</div>
 	</footer>
 
