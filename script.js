@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 
 window.onload = function() {
-	document.getElementById("home").style.backgroundImage = "url(img/landingPics/landingpic2.jpg)";
+	document.getElementById("home").style.backgroundImage = "url(img/landingPics/IMG_0066.jpg)";
 
 }
 
